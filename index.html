@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anujesh Bansal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anujesh Bansal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilepic2.png" alt="Anujesh Bansal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anujesh Bansal</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_AnujeshBansal.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin2.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anujeshbansal/'"
+          />
+          <img
+            src="./assets/github2.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/anujeshify'"
+          />
+        </div>
+      </div>
+    </section>
+    <br><br><br><br><br>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/aboutpic2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience2.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ months <br />Software Engineering Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education2.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech in Computer Science Engineering - Jaypee Institute of Information Technology Noida</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I transform complexity into elegant code, blending logic and creativity 
+              to build solutions that tell stories. From decoding social trends to empowering 
+              mental wellness, I craft technology with empathy and precision. Offscreen, I write 
+              poetry, fuel hackathons, and chase football glory. Let's turn ideas into impact—one 
+              line of code (or verse) at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow2.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <br><br><br><br><br>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Ernst & Young</h2>
+            <div class="article-container">
+              <ul style="list-style-type: none; padding-left: 0">
+                <li>
+                  
+                  • Infrastructure Development: I played a key role in a major upgrade project, evaluating proposals and supporting strategic decision-making.<br><br>
+                  • Sustainability Consulting: I helped shape a sustainability policy for a vital transportation sector.<br><br>
+                  • Financial & Operational Analysis: I provided critical data insights through in-depth analysis for a major international airport.
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skysight AI</h2>
+            <div class="article-container">
+              <ul style="list-style-type: none; padding-left: 0">
+                <li>
+                  • Automated Systems Development: Built Python applications integrating YOLOv8 models for traffic analysis.<br><br>
+                  • Machine Learning Integration: Applied ML techniques for data analysis and pattern recognition in traffic systems.<br><br>
+                  • Software Optimization: Enhanced features and improved accuracy in traffic management solutions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow2.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <br><br><br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Nasake<br>(Mental Health Platform)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify/nasake'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Foresight <br>(Retail Analytics Platform)</h2> 
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify/ForeSight'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Social Media Engagement Analyzer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify/Social-Media-Engagement-Analyzer'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anujeshify'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow2.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br><br><br><br><br><br>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email2.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anujeshbansaltoo@gmail.com">anujeshbansaltoo@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin2.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/anujeshbansal/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Anujesh Bansal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
