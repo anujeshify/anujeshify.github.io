@@ -285,7 +285,16 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Anujesh Bansal. All Rights Reserved.</p>
+      <p><p id="datetime"></p>
+      <script>
+        const now = new Date();
+        const monthName = now.toLocaleString('default', { month: 'long' }); // Get full month name
+        const year = now.getFullYear();
+
+        const formattedDate = `${monthName} ${year}`; // Combine month and year
+
+      document.getElementById("datetime").innerHTML = formattedDate;
+      </script> Anujesh Bansal;</p>
     </footer>
     <script src="script.js"></script>
   </body>
